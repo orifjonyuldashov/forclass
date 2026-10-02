@@ -3,23 +3,16 @@
 using namespace std;
 
 int main() {
-    string name;
-    int age;
-    float height;
-    char group_letter;
-    bool full_time;
+    int a,b;
+    cout<<"Enter two integers: ";
+    cin>>a>>b;
 
-    cout<<"Enter name, age, height, group letter, full-time (1 or o): ";
-    cin>>name>>age>>height>>group_letter>>full_time;
+    cout<<"Sum: "<<a+b<<endl;
+    cout<<"Difference: "<<a-b<<endl;
+    cout<<"Product: "<<a*b<<endl;
+    cout<<"Quotient: "<<a/b<<endl;
+    cout<<"Remainder: "<<a%b<<endl;
+    cout<<"Exact: "<<1.0*a/b<<endl;
 
-    cout<<"--- Student card ---"<<endl;
-    cout<<"Name: "<<name<<endl;
-    cout<<"Age: "<<age<<endl;
-    cout<<"Height: "<<height<<endl;
-    cout<<"Group letter: "<<group_letter<<endl;
-    cout<<"Full time: "<<full_time<<endl;
-    cout<<"Age in months: " <<age*12<<endl;
-    cout<<"Bytes:int "<<sizeof(int)<< ", float " <<sizeof(float)
-        << ", char " << sizeof(char)<< ", bool " <<sizeof(bool) <<endl;
     return 0;
 }
